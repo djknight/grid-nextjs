@@ -5,11 +5,15 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  // layout is an array of objects, see the demo for more complete usage
+  // layout is an array of objects
   const layout = [
-    { i: "Time", x: 0, y: 0, w: 1, h: 2, static: true },
-    { i: "b", x: 1, y: 0, w: 3, h: 2, minW: 2, maxW: 4 },
-    { i: "c", x: 4, y: 0, w: 1, h: 2 },
+    { i: "raceType", x: 0, y: 0, w: 1, h: 2, static: true },
+    { i: "raceName", x: 1, y: 0, w: 8, h: 2, minW: 2, maxW: 4 },
+    { i: "raceLength", x: 1, y: 0, w: 1, h: 2 },
+    { i: "time", x: 4, y: 0, w: 1, h: 2 },
+    { i: "weather", x: 1, y: 0, w: 8, h: 2, minW: 2, maxW: 4 },
+
+
   ];
   return (
     <GridLayout
@@ -19,9 +23,13 @@ export default function Home() {
       rowHeight={30}
       width={1200}
     >
-      <div key="Time">a</div>
-      <div key="b">b</div>
-      <div key="c">c</div>
+      <div key="raceType">Race 1</div>
+      <div key="raceName">YO Thats a level 1 Slime! </div>
+      <div key="raceLength">400m</div>
+      <div key="time">10:10:10</div>
+      <div key="weather">40 Deg</div>
+
+
     </GridLayout>
   );
 }
