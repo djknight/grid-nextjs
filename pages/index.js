@@ -1,35 +1,33 @@
 import GridLayout from "react-grid-layout";
 
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  // layout is an array of objects
+  // layout is an array of objects x is position
   const layout = [
-    { i: "raceType", x: 0, y: 0, w: 1, h: 2, static: true },
-    { i: "raceName", x: 1, y: 0, w: 8, h: 2, minW: 2, maxW: 4 },
-    { i: "raceLength", x: 1, y: 0, w: 1, h: 2 },
-    { i: "time", x: 4, y: 0, w: 1, h: 2 },
-    { i: "weather", x: 1, y: 0, w: 8, h: 2, minW: 2, maxW: 4 },
-
-
+    { i: "raceType", x: 0, y: 0, w: 2, h: 2 },
+    { i: "raceName", x: 2, y: 0, w: 11, h: 2 },
+    { i: "raceLength", x: 14, y: 0, w: 2, h: 2 },
+    { i: "time", x: 5, y: 0, w: 2, h: 2 },
+    { i: "timeOfRace", x: 0, y: 0, w: 2, h: 2 },
+    { i: "weather", x: 7, y: 0, w: 2, h: 2 },
+    
   ];
   return (
     <GridLayout
       className="layout"
       layout={layout}
-      cols={12}
+      cols={15}
       rowHeight={30}
-      width={1200}
+      width={1900}
     >
-      <div key="raceType">Race 1</div>
+      <div className="raceType" key="raceType">Race 1</div>
       <div key="raceName">YO Thats a level 1 Slime! </div>
       <div key="raceLength">400m</div>
-      <div key="time">10:10:10</div>
+      <div key="time"> Time 10:10</div>
+      <div key="timeOfRace">Time Of the Race 10:50</div>
+
       <div key="weather">40 Deg</div>
-
-
     </GridLayout>
   );
 }

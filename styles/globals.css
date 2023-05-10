@@ -28,6 +28,13 @@
   border: 1px solid black;
 }
 
+
+.raceType{
+    color:red;
+    size:32 rem;
+
+}
+
 .react-grid-item.resizing {
   z-index: 1;
   will-change: width, height;
