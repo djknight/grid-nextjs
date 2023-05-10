@@ -15,7 +15,7 @@
   -moz-columns: 120px;
   -webkit-columns: 120px;
   columns: 120px;
-  color:black;
+  color: black;
 }
 .react-grid-item {
   transition: all 200ms ease;
@@ -26,13 +26,53 @@
   transition-property: transform;
   background: #ccc;
   border: 1px solid black;
+  display: grid;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+
+  place-items: center; /* Center items horizontally and vertically */
 }
 
+.raceType {
+  color: yellow;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+}
 
-.raceType{
-    color:red;
-    size:32 rem;
+.raceName {
+  color: yellow;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
 
+.raceLength {
+  color: yellow;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.time {
+  color: yellow;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.timeOfRace {
+  color: yellow;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.weather {
+  color: yellow;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .react-grid-item.resizing {
