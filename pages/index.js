@@ -30,7 +30,8 @@ export default function Home() {
         cols={15}
         rowHeight={30}
         width={1900} //screen width
-        onLayoutChange={handleLayoutChange} // event handler for layoutonchange
+        onLayoutChange={handleLayoutChange} // event handler
+        verticalCompact={false}
       >
         <div className="raceType" key="raceType">
           Race 1
