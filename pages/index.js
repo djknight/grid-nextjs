@@ -9,6 +9,7 @@ export default function Home() {
     { i: "time", x: 4, y: 0, w: 3, h: 2 },
     { i: "timeOfRace", x: 0, y: 0, w: 2, h: 2 },
     { i: "weather", x: 7, y: 0, w: 3, h: 2 },
+    { i: "image", x: 15, y: 0, w: 3, h: 3 },
   ]);
 
   const handleLayoutChange = (newLayout) => {
@@ -35,7 +36,7 @@ export default function Home() {
         margin={[5, 5]} // add margin with a 5px gap
       >
         <div className="raceType" key="raceType">
-          Race
+          Race 1
         </div>
         <div className="raceName" key="raceName">
           YO Thats a level 1 Slime!
@@ -51,6 +52,15 @@ export default function Home() {
         </div>
         <div className="weather" key="weather">
           40℃ 40%h
+        </div>
+        <div className="img" key="image">
+          <div style={{ width: "100%", height: "100%" }}>
+            <img
+              src="/ComAV_trans.png"
+              alt="Race Image"
+              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+            />
+          </div>
         </div>
       </GridLayout>
     </div>
