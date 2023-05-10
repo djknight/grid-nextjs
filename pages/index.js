@@ -32,12 +32,13 @@ export default function Home() {
         width={1900} //screen width
         onLayoutChange={handleLayoutChange} // event handler
         verticalCompact={false}
+        margin={[5, 5]} // add margin with a 5px gap
       >
         <div className="raceType" key="raceType">
-          Race 1
+          Race
         </div>
         <div className="raceName" key="raceName">
-          YO Thats a level 1 Slime!{" "}
+          YO Thats a level 1 Slime!
         </div>
         <div className="raceLength" key="raceLength">
           400m

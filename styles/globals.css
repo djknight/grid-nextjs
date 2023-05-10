@@ -27,7 +27,7 @@
   background: #ccc;
   border: 1px solid black;
   display: grid;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 
   place-items: center; /* Center items horizontally and vertically */
@@ -35,7 +35,7 @@
 
 .raceType {
   color: yellow;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bold;
   text-align: center;
 }
@@ -112,3 +112,4 @@
   box-sizing: border-box;
   cursor: se-resize;
 }
+
