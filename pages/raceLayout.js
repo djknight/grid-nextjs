@@ -27,6 +27,8 @@ export default function Home() {
     // note do i replace the raceName to positions or positionLabels
     // or keep positionLabels and use the raceName with positions
     // or do i create each one?  then how would i delete and replace and repair them?
+
+    // merge like the positions and 1st 2nd type positions on top of the other? instead of an extra colum
   };
 
   return (
